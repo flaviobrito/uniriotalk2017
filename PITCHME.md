@@ -132,7 +132,36 @@ g + theme_economist() + scale_color_economist() + ggtitle("Consumo por cilindrad
 #HSLIDE
 # Resultado
 ![Boxplot](images/boxplot.png)
- 
+
+#HSLIDE
+# SQLite
+
+<b>RSQLite</b>: Este pacote embarca a engine do banco de dados SQLite e fornece uma interface compatível com o pacote DBI 
+<b>TSSQLite</b>: Forncece uma extensão da interface Tsdbi para o SQLite
+
+```R
+con < - dbConnect(RSQLite::SQLite(), ":memory:")
+dbWriteTable(con, "iris", iris)
+dbGetQuery(con, "SELECT * FROM iris WHERE [Petal.Width] > 2.3")
+dbDisconnect(con)
+```
+
+#HSLIDE
+# SQLITE e dplyr
+```R 
+library(dplyr)
+db <- src_sqlite("folha", create = TRUE)
+
+RH.db<- data.frame(copy_to(db,RH,temporary = FALSE))
+
+RH.db <- tbl(db, "RH")
+
+RH.db %>% select(CARGO,DEPARTAMENTO)
+
+RH.db %>% filter(DEPARTAMENTO %like% "%A")
+```
+
+
 #HSLIDE
 # MySQL
 
@@ -216,18 +245,7 @@ drv< - dbDriver("Oracle")
 d< - dbReadTable(con, "TEST_TABLE")
 dbDisconnect(con)
 ```
-#HSLIDE
-# SQLite
 
-<b>RSQLite</b>: Este pacote embarca a engine do banco de dados SQLite e fornece uma interface compatível com o pacote DBI 
-<b>TSSQLite</b>: Forncece uma extensão da interface Tsdbi para o SQLite
-
-```R
-con < - dbConnect(RSQLite::SQLite(), ":memory:")
-dbWriteTable(con, "iris", iris)
-dbGetQuery(con, "SELECT * FROM iris WHERE [Petal.Width] > 2.3")
-dbDisconnect(con)
-```
 #HSLIDE
 # MongoDB
 <b>RMongo</b>: Interface para R com MongoDB. Utiliza Java. 
