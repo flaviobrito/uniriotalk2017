@@ -1,7 +1,6 @@
 #HSLIDE
 # II Encontro de Educação Estatística
 Analytics com R e Banco de Dados<br>
-Palestrante: Flávio Brito<br>
 Data: 25.outubro.2017
 
 Flávio Brito<b>
