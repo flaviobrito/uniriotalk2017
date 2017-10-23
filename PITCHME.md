@@ -1,13 +1,9 @@
-<p align="right"> 
-<img src="images/logo.png" height="100" width="80">
-</p>
-
+#HSLIDE
 # Data Analytics com R e Banco de Dados - SQL e NOSQL
 
 <center><b>Flávio Brito<b></center>
 
-
----
+#HSLIDE
 <p align="right"> 
 <img src="images/logo.png" height="100" width="80">
 </p>
@@ -16,19 +12,14 @@
 ![Comercial Databases](images/Imagem1.png)
 *Source: RStudio* 
 
----
-<p align="right"> 
-<img src="images/logo.png" height="100" width="80">
-</p>
+#HSLIDE
 # DBI (R Database Interface)
 
 ![Comercial Databases](images/Imagem2.png)
 *Source: RStudio* 
 
 ---
-<p align="right"> 
-<img src="images/logo.png" height="100" width="80">
-</p>
+#HSLIDE
 # DBI (R Database Interface)
 
 * Disponibiliza uma interface comum a maioria dos pacotes do R para bancos de dados. Todas as classes neste pacote são virtuais, sendo assim necessitam ser estendidas por várias implementações utilizando códigos específicos em sub-pacotes
@@ -45,11 +36,7 @@ con < -  dbConnect(RMySQL::MySQL(),
     dbname = "mysql")
 ```
 ---
-
-<p align="right"> 
-<img src="images/logo.png" height="100" width="80">
-</p>
-
+#HSLIDE
 # Utilizando o DBI
 
 * dbListTables() – lista as tabelas do banco de dados
@@ -67,9 +54,7 @@ As funções dbSendQuery() e fetch() – são utilizados para transmitir grande 
 Outras funções avançadas também estão disponíveis para acesso a definição de schemas, manipulação de transações, e chamada de procedures.
   
 ---
-<p align="right"> 
-<img src="images/logo.png" height="100" width="80">
-</p>
+#HSLIDE
 # SQL Simples
 
 Buscar uma coluna sem filtragem e de forma distinta
@@ -88,9 +73,7 @@ df <-dbGetQuery(
 )
 ```
 ---
-<p align="right"> 
-<img src="images/logo.png" height="100" width="80">
-</p>
+#HSLIDE
 # Carregando um DF para um Banco de Dados
 
 ```R
@@ -114,10 +97,7 @@ head(df_bd, 4)
 4 21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
 ```
 ---
-<p align="right"> 
-<img src="images/logo.png" height="100" width="80">
-</p>
-
+#HSLIDE
 # Indo Além
 ```R
 tabela_B < - dbGetQuery(con, 
@@ -136,9 +116,7 @@ dbDisconnect(con)
 ```
 
 ---
-<p align="right"> 
-<img src="images/logo.png" height="100" width="80">
-</p>
+#HSLIDE
 # Visualizando os Dados
 
 ```R
@@ -166,10 +144,7 @@ g + theme_economist() + scale_color_economist() + ggtitle("Consumo por cilindrad
 ![Boxplot](images/boxplot.png)
 
 ---
-<p align="right"> 
-<img src="images/logo.png" height="100" width="80">
-</p>
-
+#HSLIDE
 # MySQL
 
 <b>RMySQL</b>:  Esta versão está em acordo com as definições implementadas no pacote DBI 0.2-2.
@@ -185,9 +160,7 @@ con < -  dbConnect(
 )
 ````
 ---
-<p align="right"> 
-<img src="images/logo.png" height="100" width="80">
-</p>
+#HSLIDE
 # PostgreSQL
 
 <b>RPostgreSQL</b>:  Interface R para o Banco de Dados PostgreSQL
@@ -214,10 +187,7 @@ summary(output)
  Max.   :7.900   Max.   :4.400   Max.   :6.900   Max.   :2.500 
 ```
 ---
-<p align="right"> 
-<img src="images/logo.png" height="100" width="80">
-</p>
-
+#HSLIDE
 # ODBC
 ```R
 library(RODBC)
@@ -235,9 +205,7 @@ sqlQuery(channel, query)
 sqlSave(channel, mydf, tablename = sqtable, append = FALSE) – grava ou atualiza (append =TRUE) um data frame para a tabela na base do ODBC
 
 ---
-<p align="right"> 
-<img src="images/logo.png" height="100" width="80">
-</p>
+#HSLIDE
 # JDBC
 
 ```R
@@ -260,9 +228,7 @@ d< - dbReadTable(con, "TEST_TABLE")
 dbDisconnect(con)
 ```
 ---
-<p align="right"> 
-<img src="images/logo.png" height="100" width="80">
-</p>
+#HSLIDE
 # SQLite
 
 <b>RSQLite</b>: Este pacote embarca a engine do banco de dados SQLite e fornece uma interface compatível com o pacote DBI 
@@ -276,10 +242,7 @@ dbDisconnect(con)
 ```
 
 ---
-<p align="right"> 
-<img src="images/logo.png" height="100" width="80">
-</p>
-
+#HSLIDE
 # MongoDB
 <b>RMongo</b>: Interface para R com MongoDB. Utiliza Java. 
 <b>rmongodb</b>: Fornece interface ao MongoDB para R. Removido do CRAN.
@@ -294,9 +257,7 @@ output < -
         '{nome:"Flavio", sobrenome:"Brito", email:"flaviobrito@live.com"}'
 ```
 ---
-<p align="right"> 
-<img src="images/logo.png" height="100" width="80">
-</p>
+#HSLIDE
 
 # MongoDB
 Continuando ...
@@ -310,9 +271,7 @@ db.evento.insert([{ nome: "Antonio", sobrenome: "Jose", email: "ajose@gmail.com"
 db.evento.find()
 ```
 ---
-<p align="right"> 
-<img src="images/logo.png" height="100" width="80">
-</p>
+#HSLIDE
 
 # Data Analytics com R e Banco de Dados - SQL e NOSQL
 
