@@ -1,2 +1,4 @@
 # uniriotalk2017
-Unirio Talk Event 2017 - Data Analytics com R e Banco de Dados - SQL e NOSQL
+II Econtro de Educação Estatística
+UNIRIO Talk Event 2017 - Analytics com R e Banco de Dados
+25.outubro.2017
