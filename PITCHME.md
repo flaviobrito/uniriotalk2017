@@ -1,3 +1,12 @@
+.reveal pre code {
+  font-size: 11px;
+  line-height: 1.2;
+}
+
+.reveal pre {
+  width: 120%;
+  margin-left: -10%;
+}
 #HSLIDE
 # Data Analytics com R e Banco de Dados - SQL e NOSQL
 
