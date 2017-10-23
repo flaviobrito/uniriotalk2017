@@ -18,7 +18,6 @@
 ![Comercial Databases](images/Imagem2.png)
 *Source: RStudio* 
 
----
 #HSLIDE
 # DBI (R Database Interface)
 
@@ -35,7 +34,7 @@ con < -  dbConnect(RMySQL::MySQL(),
     port = 3306,
     dbname = "mysql")
 ```
----
+
 #HSLIDE
 # Utilizando o DBI
 
@@ -53,7 +52,6 @@ df_bd < - dbGetQuery(con, "SELECT * FROM user")
 As funções dbSendQuery() e fetch() – são utilizados para transmitir grande volume de dados
 Outras funções avançadas também estão disponíveis para acesso a definição de schemas, manipulação de transações, e chamada de procedures.
   
----
 #HSLIDE
 # SQL Simples
 
@@ -72,7 +70,6 @@ df <-dbGetQuery(
     ORDER BY MEDIA_SAL DESC"
 )
 ```
----
 #HSLIDE
 # Carregando um DF para um Banco de Dados
 
@@ -96,7 +93,7 @@ head(df_bd, 4)
 3 22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
 4 21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
 ```
----
+
 #HSLIDE
 # Indo Além
 ```R
@@ -115,7 +112,6 @@ merge(amostras, tabela_A, by.x =  “cod_am", by.y = “codigo_a")
 dbDisconnect(con)
 ```
 
----
 #HSLIDE
 # Visualizando os Dados
 
@@ -135,15 +131,10 @@ g <-ggplot(df_bd, aes(
     geom_boxplot()
 g + theme_economist() + scale_color_economist() + ggtitle("Consumo por cilindradas")
 ```
----
-<p align="right"> 
-<img src="images/logo.png" height="100" width="80">
-</p>
-
+#HSLIDE
 # Resultado
 ![Boxplot](images/boxplot.png)
-
----
+ 
 #HSLIDE
 # MySQL
 
@@ -159,7 +150,7 @@ con < -  dbConnect(
     dbname = "mysql"
 )
 ````
----
+
 #HSLIDE
 # PostgreSQL
 
@@ -186,7 +177,7 @@ summary(output)
  3rd Qu.:6.400   3rd Qu.:3.300   3rd Qu.:5.100   3rd Qu.:1.800                  
  Max.   :7.900   Max.   :4.400   Max.   :6.900   Max.   :2.500 
 ```
----
+
 #HSLIDE
 # ODBC
 ```R
@@ -204,7 +195,6 @@ sqlFetch(channel, sqtable) – Lê uma tabela para um data frame
 sqlQuery(channel, query) 
 sqlSave(channel, mydf, tablename = sqtable, append = FALSE) – grava ou atualiza (append =TRUE) um data frame para a tabela na base do ODBC
 
----
 #HSLIDE
 # JDBC
 
@@ -227,7 +217,6 @@ drv< - dbDriver("Oracle")
 d< - dbReadTable(con, "TEST_TABLE")
 dbDisconnect(con)
 ```
----
 #HSLIDE
 # SQLite
 
@@ -240,8 +229,6 @@ dbWriteTable(con, "iris", iris)
 dbGetQuery(con, "SELECT * FROM iris WHERE [Petal.Width] > 2.3")
 dbDisconnect(con)
 ```
-
----
 #HSLIDE
 # MongoDB
 <b>RMongo</b>: Interface para R com MongoDB. Utiliza Java. 
@@ -256,7 +243,6 @@ output < -
         "evento2",
         '{nome:"Flavio", sobrenome:"Brito", email:"flaviobrito@live.com"}'
 ```
----
 #HSLIDE
 
 # MongoDB
@@ -270,7 +256,6 @@ db.evento.find()
 db.evento.insert([{ nome: "Antonio", sobrenome: "Jose", email: "ajose@gmail.com" }, { nome: "Jose", sobrenome: "Manoel", email: "jmanoel@gmail.com" }]);
 db.evento.find()
 ```
----
 #HSLIDE
 
 # Data Analytics com R e Banco de Dados - SQL e NOSQL
@@ -281,5 +266,5 @@ E-mail: flaviobrito@live.com
 
 https://www.github.com/flaviobrito/uniriotalk2017
 </center>
-
+## The End
 
