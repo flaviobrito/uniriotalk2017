@@ -263,7 +263,9 @@ db.evento.find()
 
 E-mail: flaviobrito@live.com
 
-https://www.github.com/flaviobrito/uniriotalk2017
+Acesso:
+https://goo.gl/5Dmnar
+
 </center>
 ## The End
 
