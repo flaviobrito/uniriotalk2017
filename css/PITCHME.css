@@ -5,14 +5,10 @@
   color: #000; }
   
 .reveal pre code {
-  font-size: 11px;
+  font-size: 15px;
   line-height: 1.2;
 }
 
-.reveal pre {
-  width: 100%;
-  margin-left: -10%;
-}
 
 Reveal.initialize({
 
