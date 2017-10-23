@@ -5,7 +5,6 @@
 
 #HSLIDE
 <p align="right"> 
-<img src="images/logo.png" height="100" width="80">
 </p>
 # DBI (R Database Interface)
 
