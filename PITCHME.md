@@ -291,12 +291,11 @@ db.evento.find()
 
 # Analytics com R e Banco de Dados 
 
-<center><b>Flávio Brito<br>
+<center><b>Flávio Brito</b><br>
 
 E-mail: flaviobrito@live.com<br>
 
 Acesso:
-https://goo.gl/5Dmnar <br>
-</center>
+https://goo.gl/5Dmnar</center>
 
 
