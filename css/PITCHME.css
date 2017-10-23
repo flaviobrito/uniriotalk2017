@@ -1,0 +1,9 @@
+.reveal pre code {
+  font-size: 11px;
+  line-height: 1.2;
+}
+
+.reveal pre {
+  width: 75%;
+  margin-left: -10%;
+}
