@@ -163,7 +163,7 @@ db <- src_sqlite("folha", create = TRUE)
 
 RH.db<- data.frame(copy_to(db,RH,temporary = FALSE))
 
-RH.db <- tbl(db, "RH")
+RH.db <- tbl(db, "RH") #read data from sqlite table
 
 RH.db %>% select(CARGO,DEPARTAMENTO)
 
