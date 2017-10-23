@@ -1,11 +1,10 @@
 #HSLIDE
 # Data Analytics com R e Banco de Dados - SQL e NOSQL
 
-<center><b>Flávio Brito<b></center>
+Flávio Brito<b>
 
 #HSLIDE
-<p align="right"> 
-</p>
+
 # DBI (R Database Interface)
 
 ![Comercial Databases](images/Imagem1.png)
@@ -151,6 +150,7 @@ con < -  dbConnect(
 ````
 
 #HSLIDE
+
 # PostgreSQL
 
 <b>RPostgreSQL</b>:  Interface R para o Banco de Dados PostgreSQL
