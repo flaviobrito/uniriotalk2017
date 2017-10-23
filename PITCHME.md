@@ -295,7 +295,8 @@ db.evento.find()
 
 E-mail: flaviobrito@live.com<br>
 
-Acesso:
-https://goo.gl/5Dmnar</center>
+Acesso: https://goo.gl/5Dmnar
+
+</center>
 
 
