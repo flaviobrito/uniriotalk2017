@@ -11,4 +11,7 @@
     margin-right: 0;
 }
 
-  
+.reveal pre code {
+  font-size: 15px;
+  line-height: 1;
+}
