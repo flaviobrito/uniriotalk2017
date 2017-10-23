@@ -149,7 +149,16 @@ dbDisconnect(con)
 #HSLIDE
 # SQLITE e dplyr
 ```R 
+
 library(dplyr)
+ID    <- c(1,2,3,4,5)
+IDADE <- c(40,45,25,50,60)
+CARGO <- c("TECNICO", "ASSISTENTE", "COORDENADOR","AUXILIAR", "GERENTE")
+FORMACAO <- c("ESTATISTICA", "ECONOMIA", "SISTEMAS", "DIREITO","LETRAS")
+DEPARTAMENTO = c("DEPARTAMENTO A", "DEPARTAMENTO A", "DEPARTAMENTO A","DEPARTAMENTO B","DEPARTAMENTO B")
+
+RH <-data.frame(ID, IDADE, CARGO, FORMACAO, DEPARTAMENTO)
+
 db <- src_sqlite("folha", create = TRUE)
 
 RH.db<- data.frame(copy_to(db,RH,temporary = FALSE))
