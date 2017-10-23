@@ -158,28 +158,21 @@ FORMACAO <- c("ESTATISTICA", "ECONOMIA", "SISTEMAS", "DIREITO","LETRAS")
 DEPARTAMENTO = c("DEPARTAMENTO A", "DEPARTAMENTO A", "DEPARTAMENTO A","DEPARTAMENTO B","DEPARTAMENTO B")
 
 RH <-data.frame(ID, IDADE, CARGO, FORMACAO, DEPARTAMENTO)
-
 db <- src_sqlite("folha", create = TRUE)
-
 RH.db<- data.frame(copy_to(db,RH,temporary = FALSE))
-
 RH.db <- tbl(db, "RH") #read data from sqlite table
-
 RH.db %>% select(CARGO,DEPARTAMENTO)
       CARGO   DEPARTAMENTO
         <chr>          <chr>
 1     TECNICO DEPARTAMENTO A
 2  ASSISTENTE DEPARTAMENTO A
-3 COORDENADOR DEPARTAMENTO A
-4    AUXILIAR DEPARTAMENTO B
-5     GERENTE DEPARTAMENTO B
-
+...
 RH.db %>% filter(DEPARTAMENTO %like% "%A")
     ID IDADE       CARGO    FORMACAO   DEPARTAMENTO
   <dbl> <dbl>       <chr>       <chr>          <chr>
 1     1    40     TECNICO ESTATISTICA DEPARTAMENTO A
 2     2    45  ASSISTENTE    ECONOMIA DEPARTAMENTO A
-3     3    25 COORDENADOR    SISTEMAS DEPARTAMENTO A
+...
 ```
 
 
