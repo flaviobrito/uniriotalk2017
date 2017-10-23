@@ -1,5 +1,5 @@
 #HSLIDE
-# Data Analytics com R e Banco de Dados - SQL e NOSQL
+# Analytics com R e Banco de Dados 
 
 Flávio Brito<b>
 
@@ -289,7 +289,7 @@ db.evento.find()
 ```
 #HSLIDE
 
-# Data Analytics com R e Banco de Dados - SQL e NOSQL
+# Analytics com R e Banco de Dados 
 
 <center><b>Flávio Brito<b>
 
