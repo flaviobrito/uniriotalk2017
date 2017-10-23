@@ -9,13 +9,13 @@
 </p>
 # DBI (R Database Interface)
 
-![Comercial Databases](images/Imagem1.png&size=75% 75%)
+![Comercial Databases](images/Imagem1.png)
 *Source: RStudio* 
 
 #HSLIDE
 # DBI (R Database Interface)
 
-![Comercial Databases](images/Imagem2.png&size=75% 75%)
+![Comercial Databases](images/Imagem2.png)
 *Source: RStudio* 
 
 #HSLIDE
